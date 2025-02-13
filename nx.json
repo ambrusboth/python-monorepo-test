@@ -15,6 +15,9 @@
   "nxCloudId": "67ad39f2cd608e189a0801a2",
   "plugins": [
     {
+      "plugin": "@nxlv/python"
+    },
+    {
       "plugin": "@nx/js/typescript",
       "options": {
         "typecheck": {
