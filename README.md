@@ -41,3 +41,8 @@ Then set the remote repo in the freshly created nx workspace:
 git remote add origin https://github.com/ambrusboth/python-monorepo-test.git
 git push -u origin main
 ```
+
+Add Nx python plugin:
+```
+npm install @nxlv/python
+```
