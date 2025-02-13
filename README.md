@@ -46,3 +46,17 @@ Add Nx python plugin:
 ```
 npm install @nxlv/python
 ```
+and include this plugin in the `nx.json`.
+
+
+Add a poetry project:
+```
+npx nx generate @nxlv/python:poetry-project my-arithmetics --directory=libs --projectNameAndRootFormat=derived --projectType=library --linter=flake8 --unitTestRunner=pytest --unitTestHtmlReport=true --unitTestJUnitReport=true --codeCoverage=true --codeCoverageHtmlReport=true --codeCoverageXmlReport=true --codeCoverageThreshold=80 --pyprojectPythonDependency=">=3.12,<4" 
+```
+
+Add an external dependency to it:
+```
+npx nx run my-arithmetics:add --name=numpy
+```
+
+Add some arithmetic functions there.
