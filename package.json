@@ -13,7 +13,11 @@
     "tslib": "^2.3.0",
     "typescript": "~5.7.2"
   },
-  "workspaces": ["apps/*", "libs/*"],
+  "workspaces": 
+  [
+      "apps/*", 
+      "libs/*"
+  ],
   "dependencies": {
     "@nxlv/python": "^20.5.1"
   }

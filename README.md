@@ -60,3 +60,24 @@ npx nx run my-arithmetics:add --name=numpy
 ```
 
 Add some arithmetic functions there.
+
+
+Now add another poetry project, this time an app:
+```
+npx nx generate @nxlv/python:poetry-project my-calcs --directory=apps --projectNameAndRootFormat=derived --projectType=application --linter=flake8 --unitTestRunner=pytest --unitTestHtmlReport=true --unitTestJUnitReport=true --codeCoverage=true --codeCoverageHtmlReport=true --codeCoverageXmlReport=true --codeCoverageThreshold=80 --pyprojectPythonDependency=">=3.12,<4"
+```
+
+List the available projects:
+```
+npx nx show projects
+```
+
+Add the libs project to the apps project:
+```
+npx nx run my-calcs:add --name=libs-my-arithmetics --local
+```
+
+
+
+
+
