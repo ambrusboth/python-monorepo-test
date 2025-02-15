@@ -7,6 +7,17 @@ Testing how to structure a python monorepo
 
 ## Installation 
 
+### Get ASDF
+
+Install ASDF from precompiled [executables]https://github.com/asdf-vm/asdf/releases).
+
+Add nodejs plugin:
+```
+asdf plugin add nodejs https://github.com/asdf-vm/asdf-nodejs.git
+```
+
+### Install tools
+
 ```
 asdf install
 npm install -g nx
